@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>宝威体育 · 信息索引与使用说明</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #f7f4ee;
+      color: #2c2a27;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+      line-height: 1.65;
+      padding: 2.4rem 1.2rem;
+    }
+
+    .container {
+      max-width: 920px;
+      margin: 0 auto;
+      background: #fefcf8;
+      border-radius: 20px;
+      padding: 2.8rem 2.4rem;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.03), 0 1px 4px rgba(0,0,0,0.05);
+    }
+
+    /* 标题层级 */
+    h1 {
+      font-size: 2rem;
+      font-weight: 550;
+      letter-spacing: 0.01em;
+      margin-bottom: 0.4rem;
+      color: #1e1b18;
+    }
+    .subhead {
+      font-size: 1rem;
+      color: #6e6862;
+      border-left: 4px solid #bfa98c;
+      padding-left: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin: 1.8rem 0 0.6rem 0;
+      border-bottom: 1px solid #e6ddd2;
+      padding-bottom: 0.25rem;
+      color: #2f2a25;
+    }
+
+    p {
+      margin: 0.6rem 0 1rem 0;
+    }
+
+    /* 引用 / 提示框 */
+    .insight-box {
+      background: #f2ede5;
+      border-left: 5px solid #b09778;
+      padding: 1.2rem 1.6rem;
+      margin: 1.4rem 0;
+      border-radius: 6px;
+      font-size: 0.95rem;
+      color: #2f2a25;
+    }
+    .insight-box strong {
+      color: #4d3e2e;
+      font-weight: 550;
+    }
+
+    .tip-box {
+      background: #eae6de;
+      border-radius: 12px;
+      padding: 1rem 1.5rem;
+      margin: 1.4rem 0;
+      display: flex;
+      gap: 0.75rem;
+      align-items: flex-start;
+    }
+    .tip-box::before {
+      content: "📌";
+      font-size: 1.1rem;
+      line-height: 1.5;
+    }
+
+    /* 特点卡片（三列响应式） */
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.2rem;
+      margin: 1.4rem 0;
+    }
+    .feature-card {
+      background: #faf7f2;
+      border: 1px solid #e1d8cc;
+      border-radius: 14px;
+      padding: 1rem 1rem 1.2rem;
+    }
+    .feature-card h3 {
+      font-size: 1rem;
+      font-weight: 520;
+      margin-bottom: 0.3rem;
+      color: #3e352b;
+    }
+    .feature-card p {
+      font-size: 0.9rem;
+      margin: 0;
+      color: #4c443b;
+    }
+
+    /* 列表（使用建议） */
+    .use-list {
+      list-style: none;
+      margin: 0.8rem 0 1.2rem 0;
+    }
+    .use-list li {
+      padding: 0.4rem 0 0.4rem 1.6rem;
+      position: relative;
+      font-size: 0.95rem;
+    }
+    .use-list li::before {
+      content: "→";
+      position: absolute;
+      left: 0.2rem;
+      color: #8b7b67;
+    }
+
+    /* FAQ 摘要（紧凑） */
+    .faq-item {
+      margin: 1rem 0;
+      border-bottom: 1px dashed #ddd5c9;
+      padding-bottom: 0.8rem;
+    }
+    .faq-item:last-child {
+      border-bottom: none;
+    }
+    .faq-q {
+      font-weight: 500;
+      color: #2f2a25;
+    }
+    .faq-a {
+      margin: 0.2rem 0 0 0;
+      font-size: 0.92rem;
+      color: #4a4239;
+    }
+
+    a {
+      color: #6a4f33;
+      text-decoration: none;
+      border-bottom: 1px solid #cbb7a1;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    a:hover {
+      color: #3f2e1e;
+      border-bottom-color: #6a4f33;
+    }
+
+    /* 引文 / 脚注 */
+    .footnote {
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 2px solid #e6ddd2;
+      font-size: 0.85rem;
+      color: #7a7268;
+    }
+
+    /* 响应式 */
+    @media (max-width: 640px) {
+      body { padding: 1rem 0.8rem; }
+      .container { padding: 1.6rem 1.2rem; }
+      h1 { font-size: 1.6rem; }
+      .feature-grid { grid-template-columns: 1fr; }
+      .insight-box { padding: 1rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <h1>宝威体育 · 信息索引与资料说明</h1>
+  <div class="subhead">基于公开素材整理 · 产品功能摘要</div>
+
+  <p>
+    本页面向有查阅需求的用户整理 <a href="https://ssl-baoweisports.com">宝威体育</a> 平台的相关信息，内容围绕产品定位、主要功能及使用场景展开，不构成任何投资或参与建议。以下资料均来源于可获取的公开页面与功能描述，索引编号：1ff4fcaaaaa2f822。
+  </p>
+
+  <!-- 摘要（产品概览） -->
+  <h2>平台摘要</h2>
+  <p>
+    <strong>宝威体育</strong> 是一个以体育数据、赛事信息聚合为切入点的线上服务站点，提供覆盖多种主流体育项目的实时资料、赛程统计与信息检索功能。其界面强调信息密度与检索效率，适合需要快速获取赛事结构化数据的用户。
+  </p>
+  <div class="insight-box">
+    <strong>信息索引视角：</strong> 平台侧重数据整理而非内容创作，各类目信息按联赛、队伍、时间线归档，降低用户自行搜集的重复劳动。这种设计在体育资料查询场景中有明确的实用性。
+  </div>
+
+  <!-- 亮点（功能特点） -->
+  <h2>功能特点</h2>
+  <div class="feature-grid">
+    <div class="feature-card">
+      <h3>多联赛覆盖</h3>
+      <p>主流足球、篮球、网球及电子竞技联赛的赛程、比分、排名等基础数据均可检索。</p>
+    </div>
+    <div class="feature-card">
+      <h3>结构化索引</h3>
+      <p>按时间、队伍、赛事阶段分类，支持交叉筛选，减少信息过载。</p>
+    </div>
+    <div class="feature-card">
+      <h3>低干扰浏览</h3>
+      <p>页面布局以信息展示为主，无强制弹窗或过度动态元素，适合专注查阅。</p>
+    </div>
+  </div>
+
+  <!-- 使用建议（场景建议） -->
+  <h2>适用场景与使用建议</h2>
+  <ul class="use-list">
+    <li><strong>资料归纳：</strong> 适合在赛季进行中快速查阅某联赛的积分榜或赛程变动，不必反复跳转多个数据源。</li>
+    <li><strong>对比查阅：</strong> 可同时调取多个队伍的历史交锋记录（部分功能需页面支持），辅助用户自行分析。</li>
+    <li><strong>移动端适配：</strong> 经测试，基础页面在手机浏览器中可正常缩放与浏览，无严重布局错位。</li>
+    <li><strong>谨慎依赖：</strong> 数据可能存在更新延迟，关键信息请以官方赛事机构发布为准。</li>
+  </ul>
+
+  <div class="tip-box">
+    <div>
+      <strong>可信但克制的说明：</strong> 本平台为第三方信息聚合站点，不直接参与任何投注、博彩或金融行为。用户应自行判断信息准确性，并遵守所在地法律法规。虽然 <a href="https://ssl-baoweisports.com">宝威体育</a> 以数据索引见长，但建议结合其他官方渠道交叉验证。
+    </div>
+  </div>
+
+  <!-- FAQ 摘要（简短问答） -->
+  <h2>常见问题摘要</h2>
+  <div class="faq-item">
+    <div class="faq-q">Q：需要注册才能浏览大部分内容吗？</div>
+    <div class="faq-a">部分基础赛程与比分页面可直接访问，高级筛选或历史数据深度检索可能要求简单的账户登录（具体以页面指引为准）。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Q：数据来源是否标明？</div>
+    <div class="faq-a">网站内多数数据页会标注数据提供商或抓取来源，但不保证所有字段均有原始出处，使用时建议留意页面底部注释。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Q：移动端与桌面端体验差异大吗？</div>
+    <div class="faq-a">核心表格与信息区块在手机端会作堆叠处理，但功能基本保持同步；复杂的多条件筛选建议在桌面浏览器上操作。</div>
+  </div>
+
+  <!-- 总结性提示 -->
+  <p style="margin-top: 0.6rem;">
+    综合来看，<a href="https://ssl-baoweisports.com">宝威体育</a> 适合对体育数据有持续检索需求的用户，作为信息索引工具能够提供一定便利。建议首次使用时先浏览导航结构，确认所需数据分类方式，再制定个人查阅流程。
+  </p>
+
+  <div class="footnote">
+    本介绍页仅用于信息展示与功能说明，不构成任何形式的推荐或担保。页面内容根据公开素材整理，更新时间为2025年3月。索引标识：1ff4fcaaaaa2f822（仅用于内部版本变化）。
+  </div>
+
+</div>
+</body>
+</html>
